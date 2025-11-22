@@ -1,0 +1,11 @@
+/*java */
+ pipeline{
+  agent{docker{image " "}}
+  stages{
+    stage("build"){
+      steps{
+        "sh mvn --version"
+      }
+    }
+  }
+ }
